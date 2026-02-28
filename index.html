@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to WhatsApp - Lui Pilates</title>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', 'SEU_ID_DO_PIXEL'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=SEU_ID_DO_PIXEL&ev=PageView&noscript=1"
+    /></noscript>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            padding-top: 50px; 
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        .loader { 
+            margin: 30px auto; 
+            border: 5px solid #f3f3f3; 
+            border-top: 5px solid #ff6b6b; 
+            border-radius: 50%; 
+            width: 50px; 
+            height: 50px; 
+            animation: spin 1s linear infinite; 
+        }
+        
+        @keyframes spin { 
+            0% { transform: rotate(0deg); } 
+            100% { transform: rotate(360deg); } 
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        p { 
+            color: #666; 
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo Lui Pilates -->
+        <h1>💜 Lui Pilates</h1>
+        
+        <div class="loader"></div>
+        <p>Aguarde, redirecionando para o WhatsApp...</p>
+        <p style="font-size: 14px;">Em poucos segundos você será atendido</p>
+        
+        <p style="font-size: 12px; margin-top: 30px;">
+            Se não for redirecionado automaticamente, <a id="whatsapp-link" href="#">clique aqui</a>.
+        </p>
+    </div>
+
+    <script>
+        // Número de telefone do WhatsApp (sem +)
+        const phoneNumber = '5543999817372';
+        
+        // Mensagem
+        const message = 'Oii, tenho interesse no Pilates. Como Funciona?';
+        
+        // Codifica a mensagem para URL
+        const encodedMessage = encodeURIComponent(message);
+        
+        // Monta o link do WhatsApp
+        const whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
+        
+        // Atualiza o link de fallback
+        document.getElementById('whatsapp-link').href = whatsappLink;
+        
+        // Função de Redirecionamento
+        function redirect() {
+            window.location.href = whatsappLink;
+        }
+        
+        // Dispara evento do Pixel e redireciona após 1.5 segundos
+        setTimeout(redirect, 1500);
+    </script>
+
+</body>
+</html>
