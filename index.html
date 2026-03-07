@@ -1,154 +1,347 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting to WhatsApp - Lui Pilates</title>
-    
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    
-    fbq('init', 'SEU_ID_DO_PIXEL'); 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Estúdio Lui Pilates em Londrina. Aulas personalizadas, metodologia exclusiva de respiração, alinhamento, progressão e presença. Agende um Lui Start!">
+  <meta name="keywords"
+    content="Pilates, Londrina, Estúdio de Pilates, Lui Pilates, Pilates Solo, Pilates Apparatus, Saúde, Bem-estar">
+  <meta name="author" content="Lui Pilates">
+  <meta property="og:title" content="Estúdio Lui Pilates | Excelência em Pilates">
+  <meta property="og:description"
+    content="Estúdio Lui Pilates em Londrina. Aulas personalizadas em um ambiente premium e sofisticado.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.luipilates.com/">
+  <meta property="og:site_name" content="Lui Pilates">
+
+  <title>Estúdio Lui Pilates | Excelência em Pilates</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID_AQUI');
     fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=SEU_ID_DO_PIXEL&ev=PageView&noscript=1"
-    /></noscript>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            text-align: center; 
-            padding-top: 50px; 
-            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-            min-height: 100vh;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            max-width: 500px;
-            width: 90%;
-        }
-        
-        .logo {
-            width: 150px;
-            margin-bottom: 20px;
-        }
-        
-        .loader { 
-            margin: 30px auto; 
-            border: 5px solid #f3f3f3; 
-            border-top: 5px solid #ff6b6b; 
-            border-radius: 50%; 
-            width: 50px; 
-            height: 50px; 
-            animation: spin 1s linear infinite; 
-        }
-        
-        @keyframes spin { 
-            0% { transform: rotate(0deg); } 
-            100% { transform: rotate(360deg); } 
-        }
-        
-        h1 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        
-        p { 
-            color: #666; 
-            font-size: 16px;
-            margin: 10px 0;
-        }
-        
-        .whatsapp-btn {
-            display: inline-block;
-            background: #25D366;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: transform 0.3s;
-        }
-        
-        .whatsapp-btn:hover {
-            transform: scale(1.05);
-        }
-        
-        a {
-            color: #ff6b6b;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ravelle&family=IBM+Plex+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <!-- Logo Lui Pilates -->
-        <img src="logo-lui.svg" alt="Lui Pilates" class="logo">
-        
-        <div class="loader"></div>
-        <p>Aguarde, redirecionando para o WhatsApp...</p>
-        <p style="font-size: 14px;">Em poucos segundos você será atendido</p>
-        
-        <p style="font-size: 12px; margin-top: 30px;">
-            Se não for redirecionado automaticamente, <a id="whatsapp-link" href="#">clique aqui</a>.
-        </p>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="images/logo.svg" alt="Lui Pilates" width="120">
+      </a>
+      <nav class="nav" id="nav">
+        <button class="nav-close" id="nav-close" aria-label="Fechar menu">
+          <span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#metodo">Método</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#espaco">Espaço</a></li>
+          <li><a href="https://wa.me/5543999817372?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20Lui%20Start."
+              target="_blank" class="btn btn-primary btn-agendar">Agendar</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </header>
 
-    <script>
-        // Número de telefone do WhatsApp (sem +)
-        const phoneNumber = '5543999817372';
-        
-        // Mensagem
-        const message = 'Oii, tenho interesse no Pilates. Como Funciona?';
-        
-        // Codifica a mensagem para URL
-        const encodedMessage = encodeURIComponent(message);
-        
-        // Monta o link do WhatsApp
-        const whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
-        
-        // Atualiza o link de fallback
-        document.getElementById('whatsapp-link').href = whatsappLink;
-        
-        // Função de Redirecionamento
-        function redirect() {
-            window.location.href = whatsappLink;
-        }
-        
-        // Dispara evento do Pixel e redireciona após 1.5 segundos
-        setTimeout(redirect, 1500);
-    </script>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <span class="hero-tag">Studio de Pilates em Londrina</span>
+      <h1 class="hero-title">Respire. Sinta.<br><em>Seja Lui</em></h1>
+      <p class="hero-text">Alongue e fortaleça seu corpo, reset a sua mente.</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/5543999817372?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20Lui%20Start."
+          target="_blank" class="btn btn-primary btn-agendar">Agendar Lui Start</a>
+        <a href="#planos" class="btn btn-outline">Conhecer nossos planos</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
+  <!-- Sobre -->
+  <section class="section about" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-image-inner">
+            <img src="images/fotos/IMG_0430.jpg" alt="Conceito Lui Pilates" loading="lazy" style="object-fit: cover;">
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">Sobre Nós</span>
+          <h2 class="section-title">Menos pessoas.<br>Mais cuidado.</h2>
+          <p>No Lui, a gente acredita que cada corpo tem uma história e por isso o cuidado precisa ser real.</p>
+          <p>E antes de pensar em performance, acreditamos em uma coisa: cura.</p>
+          <p>Cura é quando o corpo volta a respirar melhor. Quando a postura melhora sem sofrimento. Quando você sai de
+            uma aula sentindo que, por alguns minutos, a mente descansou.</p>
+          <p>Foi por isso que nasceu o Lui: para unir técnica com acolhimento, e transformar o pilates em um ritual que
+            faz sentido por dentro e por fora.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <!-- Planos -->
+  <section class="section services" id="planos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Planos Lui</span>
+        <h2 class="section-title">O que oferecemos</h2>
+        <p style="margin-top: 20px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">Os
+          planos do Lui são organizados por frequência semanal, porque o que transforma o corpo é a constância. Em todos
+          eles, você tem o mesmo padrão Lui: atenção real, correções gentis, progressão guiada e um espaço para
+          desacelerar a mente.</p>
+
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Lui Essência</h3>
+          <p class="plan-freq" style="font-weight: bold; margin-bottom: 15px; color: var(--primary);">1x por semana</p>
+          <p>Para quem quer começar com leveza ou manter um ritual semanal de cuidado. É o plano ideal para reequilibrar
+            o corpo, melhorar postura e criar constância sem pressa: uma pausa que vira hábito.</p>
+        </article>
+        <article class="service-card">
+          <h3>Lui Presença</h3>
+          <p class="plan-freq" style="font-weight: bold; margin-bottom: 15px; color: var(--primary);">2x por semana</p>
+          <p>Para quem busca evolução perceptível e resultados mais consistentes. Duas vezes por semana é o ritmo que
+            faz o corpo aprender mais rápido: mais estabilidade, mais força e mais consciência no dia a dia: com calma e
+            método.</p>
+        </article>
+        <article class="service-card">
+          <h3>Lui Performance</h3>
+          <p class="plan-freq" style="font-weight: bold; margin-bottom: 15px; color: var(--primary);">3x por semana</p>
+          <p>Para quem quer transformação mais acelerada e uma rotina de presença. Três vezes por semana aprofunda a
+            progressão: o corpo responde com mais velocidade, a postura muda, a dor diminui e a mente desacelera com
+            mais facilidade.</p>
+        </article>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://wa.me/5543999817372?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20Lui%20Start."
+          target="_blank" class="btn btn-primary btn-agendar">Agendar Lui Start</a>
+        <p
+          style="margin-top: 15px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; font-size: 0.85em; line-height: 1.5;">
+          <strong>Observação importante:</strong><br>Tudo começa com o Lui Start: nossa avaliação + aula experimental
+          (40–50 min). É nela que entendemos seu corpo, sua rotina e seus objetivos para indicar o plano ideal e o
+          melhor caminho de evolução.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <!-- Método -->
+  <section class="section features" id="metodo">
+    <div class="container">
+      <div class="features-grid">
+        <div class="features-content">
+          <span class="section-tag">Como Funciona</span>
+          <h2 class="section-title">O Jeito Lui</h2>
+          <p style="margin-bottom: 30px;">A gente não treina no automático. A gente cria constância. Toda aula tem
+            começo, meio e fim: respirar, ajustar, fortalecer e sentir.</p>
+          <div class="features-list">
+            <div class="feature-item">
+              <span class="feature-number">01</span>
+              <div>
+                <h4>Respiração</h4>
+                <p>Para acalmar a mente e dar direção ao movimento.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-number">02</span>
+              <div>
+                <h4>Alinhamento</h4>
+                <p>Correções gentis, com "porquê".</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-number">03</span>
+              <div>
+                <h4>Progressão</h4>
+                <p>Metas possíveis e evolução consistente.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-number">04</span>
+              <div>
+                <h4>Presença</h4>
+                <p>Um minuto final para o corpo entender que está seguro.</p>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 30px;">
+            <a href="https://wa.me/5543999817372?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20Lui%20Start."
+              target="_blank" class="btn btn-primary btn-agendar">Agendar Lui Start</a>
+          </div>
+        </div>
+        <div class="features-image">
+          <div class="about-image-inner">
+            <img src="images/fotos/estudio-2.jpg" alt="Método Lui Pilates" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Espaço -->
+  <section class="section features" id="espaco">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nosso Estúdio</span>
+        <h2 class="section-title">Um espaço para o corpo<br>e para a mente.</h2>
+        <p style="margin-top: 20px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">O Lui
+          foi pensado para que você sinta o cuidado antes mesmo da aula começar. Aqui, o ambiente não é cenário, é parte
+          do tratamento. Menos barulho. Mais corpo.</p>
+      </div>
+      <div class="services-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+        <img src="images/fotos/IMG_0081.jpg" alt="Recepção Lui Pilates"
+          style="width: 100%; height: 350px; object-fit: cover; border-radius: 12px;">
+        <img src="images/fotos/IMG_0085.jpg" alt="Sala Lui Pilates"
+          style="width: 100%; height: 350px; object-fit: cover; border-radius: 12px;">
+        <img src="images/fotos/estudio-1.jpg" alt="Canto Clínico Lui Pilates"
+          style="width: 100%; height: 350px; object-fit: cover; border-radius: 12px;">
+        <img src="images/fotos/IMG_9986.jpg" alt="Detalhe Sensorial Lui Pilates"
+          style="width: 100%; height: 350px; object-fit: cover; border-radius: 12px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Agendar -->
+  <section class="cta-section" id="agendar">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Comece pelo Lui Start</h2>
+        <p>O Lui Start é sua primeira aula (40–50 min): mini-avaliação + aula guiada, para entender seu corpo e indicar
+          o melhor caminho de progressão.<br>Agende agora e escolha seu horário.</p>
+        <a href="https://wa.me/5543999817372?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20Lui%20Start."
+          target="_blank" class="btn btn-white btn-agendar">Agendar Lui Start</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="section contact" id="contato">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag">Contato</span>
+          <h2 class="section-title">Fale com a gente</h2>
+          <p>Estamos prontas para tirar suas dúvidas e te ajudar a começar com segurança.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/5543999817372">43 99981-7372</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Localização</span>
+              <p>Rua Adhemar Pereira de Barros, 725 - Bela Suíça<br>(atrás / no estacionamento da clínica)<br>Londrina •
+                PR</p>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Horário</span>
+              <p>Segunda a sábado<br>6h às 19h</p>
+            </div>
+            <div class="contact-item" style="margin-top: 20px;">
+              <span class="contact-label">Redes sociais</span>
+              <a href="https://instagram.com/luipilates" target="_blank">@luipilates</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map"
+          style="width: 100%; border-radius: 12px; overflow: hidden; height: 100%; min-height: 350px;">
+          <h3 style="margin-bottom: 20px; font-size: 1.5rem;">Como chegar</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.3323061298535!2d-51.1818292!3d-23.3399432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb430a597a7833%3A0x6dff6bd7f9e836ee!2sR.%20Adhemar%20Pereira%20de%20Barros%2C%20725%20-%20Bela%20Su%C3%AD%C3%A7a%2C%20Londrina%20-%20PR%2C%2086050-190!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+            width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.svg" alt="Lui Pilates" width="100">
+          <p>Excelência em Pilates em Londrina.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#metodo">Método</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#espaco">Espaço</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Redes Sociais</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="18" cy="6" r="1" />
+              </svg>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17.5 6.5a8 8 0 0 0-13.5 8c.3.5.5 1.2.7 1.8l-1 3.5 3.5-1c.6.2 1.3.4 1.8.7a8 8 0 0 0 8-8.5z" />
+                <circle cx="9" cy="10" r="1" />
+                <circle cx="15" cy="10" r="1" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="font-weight: 500; font-size: 1.1rem; margin-bottom: 5px;">Lui Pilates. Precisão que acolhe.</p>
+        <p>Respire. Sinta. Seja Lui.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
