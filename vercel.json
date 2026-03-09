@@ -1,1 +1,4 @@
-{"name":"lui-pilates-wpp"}
+{
+  "outputDirectory": ".",
+  "framework": null
+}
